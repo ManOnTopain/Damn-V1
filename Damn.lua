@@ -1,8 +1,6 @@
 shared.Executed
-
-repeat task.wait(0.1) until game:IsLoaded
-repeat task.wait() until shared.Executed
-if shared.private then
-print("test")
-end
+repeat task.wait() until game:IsLoaded
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
+if shared.private then
+print("private test")
+end
