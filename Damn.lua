@@ -1,5 +1,4 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Source = "https://raw.githubusercontent.com/ManOnTopain/Damn-V1/main/Damn.lua"
 local colors = {
     SchemeColor = Color3.fromRGB(0,255,255),
     Background = Color3.fromRGB(0, 0, 0),
@@ -13,6 +12,7 @@ local Section = Tab:NewSection("Main")
 Section:NewSlider("Speed", "gives u speed", 60, 16, function(speed)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
 end)
+
 
 Section:NewButton("ForceReset", "force resets u", function()
 	game.ReplicatedStorage.Remotes.ResetEvent:FireServer()
@@ -47,5 +47,10 @@ local Section = Tab:NewSection("Link")
 
 
 Section:NewButton("game Link Clipboard", "sets the game link to ur clipboard", function()
-	setClipboard("https://www.roblox.com/games/8287223300/Headcrab-Demonstration-2")
+	setclipboard("https://www.roblox.com/games/8287223300/Headcrab-Demonstration-2")
+end)
+
+
+Section:NewButton("inf points", "gives u inf points, not fe neither serversided", function()
+	game.Players.LocalPlayer.leaderstats.Points.Value = math.huge
 end)
