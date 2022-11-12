@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local MainLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/ManOnTopain/Damn-V1/main/Damn.lua"))()
+local MainLibrary = "https://raw.githubusercontent.com/ManOnTopain/Damn-V1/main/Damn.lua"
 local colors = {
     SchemeColor = Color3.fromRGB(0,255,255),
     Background = Color3.fromRGB(0, 0, 0),
